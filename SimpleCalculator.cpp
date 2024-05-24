@@ -4,29 +4,20 @@
 
 using namespace std;
 
-string Add(int a, int b) {
-    ostringstream oss;
-    oss << a << " + " << b << " = " << (a + b);
-    return oss.str();
+int Add(int a, int b) {
+    return a + b;
 }
 
-string Subtract(int a, int b) {
-    ostringstream oss;
-    oss << a << " - " << b << " = " << (a - b);
-    return oss.str();
+int Subtract(int a, int b) {
+    return a - b;
 }
 
-string Multiply(int a, int b) {
-    ostringstream oss;
-    oss << a << " * " << b << " = " << (a * b);
-    return oss.str();
+int Multiply(int a, int b) {
+    return a * b;
 }
 
-string Divide(int a, int b) {
-    if (b == 0) return "Error: Division by zero.";
-    ostringstream oss;
-    oss << a << " / " << b << " = " << (a / b);
-    return oss.str();
+int Divide(int a, int b) {
+    return a / b;
 }
 
 int main() {
